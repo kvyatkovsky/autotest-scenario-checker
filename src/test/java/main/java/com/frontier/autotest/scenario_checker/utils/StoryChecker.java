@@ -1,5 +1,6 @@
 package utils;
 
+import main.java.com.frontier.autotest.scenario_checker.utils.ScenarioStructureChecker;
 import org.jbehave.core.model.Scenario;
 import org.jbehave.core.model.Story;
 import report.Reporter;
@@ -24,9 +25,7 @@ public class StoryChecker {
         Set<String> wrongScenarios = new LinkedHashSet<>();
 
         for (Scenario scenario : story.getScenarios()) {
-            String result = scenarioStructureChecker.checkScenarioStructure(
-                    ScenarioInfoUtils.getScenarioShortTitle(scenario),
-                    ScenarioInfoUtils.getKeySteps(story.getLifecycle(),scenario));
+            String result = scenarioStructureChecker.checkScenarioStructure(scenario, story.getLifecycle());
             if (result != null) {
                 wrongScenarios.add(result);
             }

@@ -17,6 +17,7 @@ public class JBehaveStoriesServiceImpl {
     private StoryParser parser = new RegexStoryParser();
     private static Logger logger = Logger.getLogger(JBehaveStoriesServiceImpl.class);
     private static String path = "/Users/maximkvyatkovsky/Documents/workspace/ctco-orke/frontier_autotests/all-tests-parent/serenity-bdd-tests/src/test/resources/stories/WEB_UI/Frontier_main_ui";
+//    private static String path = "/Users/maximkvyatkovsky/Documents/workspace/frontier-autotest-scenario-checker/src/test/java/main/resources";
 
 
 

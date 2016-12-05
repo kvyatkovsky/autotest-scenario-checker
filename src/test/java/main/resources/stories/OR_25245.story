@@ -52,7 +52,7 @@ And Dealer enters 1 to 'promoRetail' field on the 'Add/Change In-store Timed Spe
 And Dealer enters 2 to 'promoCost' field on the 'Add/Change In-store Timed Special' pop-up on 'Add/Change In-store Timed Special' screen
 And Dealer presses Enter key
 Then 'Invalid Date' CPF message is present on 'Add/Change In-store Timed Special' popup displayed on 'Add/Change In-store Timed Special' screen
-And Dealer sees cursor in 'startDate' field on the 'Add/Change In-store Timed Special' pop-up on 'Add/Change In-store Timed Special' screen
+Then Dealer sees cursor in 'startDate' field on the 'Add/Change In-store Timed Special' pop-up on 'Add/Change In-store Timed Special' screen
 
 Examples:
 examples/OR_25245_1.table

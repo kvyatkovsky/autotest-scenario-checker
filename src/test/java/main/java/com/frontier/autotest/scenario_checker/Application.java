@@ -1,10 +1,12 @@
+package main.java.com.frontier.autotest.scenario_checker;
+
 import org.jbehave.core.model.Story;
+
+
+import java.util.List;
 import report.Reporter;
 import utils.JBehaveStoriesServiceImpl;
 import utils.StoryChecker;
-
-import java.util.List;
-
 public class Application {
 
 

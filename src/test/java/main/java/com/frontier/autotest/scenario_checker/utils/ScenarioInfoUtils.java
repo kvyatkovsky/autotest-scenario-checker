@@ -1,4 +1,4 @@
-package utils;
+package main.java.com.frontier.autotest.scenario_checker.utils;
 
 import org.jbehave.core.model.Lifecycle;
 import org.jbehave.core.model.Scenario;
@@ -33,7 +33,7 @@ public class ScenarioInfoUtils {
     }
 
     private static List<String> excludeAndSteps(List<String> steps){
-        return steps.stream().filter(step -> !step.startsWith(AND))
+        return steps.stream().filter(step -> !step.startsWith(AND) & !step.startsWith("!--"))
                 .collect(Collectors.toList());
     }
 

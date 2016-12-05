@@ -1,10 +1,9 @@
-package utils;
+package main.java.com.frontier.autotest.scenario_checker.utils;
 
+import org.jbehave.core.model.Lifecycle;
 import org.jbehave.core.model.Scenario;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class ScenarioStructureChecker {
 
@@ -25,7 +24,7 @@ public class ScenarioStructureChecker {
     private static final String WHEN = "When";
     private static final String THEN = "Then";
 
-    public String checkScenarioStructure(final String scenarioShortName, final List<String> stepKeys) {
+    public String checkScenarioStructureWithoutLifecycle(final String scenarioShortName, final List<String> stepKeys) {
 
         String previousKey;
         String currentKey = "";
@@ -35,7 +34,7 @@ public class ScenarioStructureChecker {
             for (int i = 1; i < stepKeys.size(); i++) {
                 currentKey = stepKeys.get(i).split(" ")[0];
                 if (currentKey.equals(GIVEN)) {
-
+                    return scenarioShortName + " has GIVEN key inside";
                 }
                 if (currentKey.equals(previousKey)) {
                     return scenarioShortName + " has " + previousKey + " key repeats twice";
@@ -50,6 +49,45 @@ public class ScenarioStructureChecker {
             return scenarioShortName + " scenario doesn't starts with Given key";
         }
         return null;
+    }
+
+    private String checkScenarioStructureWithLifecycle(final String scenarioShortName, final List<String> stepKeys) {
+
+        String previousKey;
+        String currentKey = "";
+
+        if (isScenarioStartsWithGiven(stepKeys)) {
+            previousKey = stepKeys.get(1);
+
+            for (int i = 2; i < stepKeys.size(); i++) {
+                currentKey = stepKeys.get(i).split(" ")[0];
+                if (currentKey.equals(GIVEN)) {
+                    return scenarioShortName + " has GIVEN key inside";
+                }
+                if (currentKey.equals(previousKey)) {
+                    return scenarioShortName + " has " + previousKey + " key repeats twice";
+                }
+                previousKey = currentKey;
+            }
+
+            if (!currentKey.equals(THEN)) {
+                return scenarioShortName + " scenario doesn't ends with Then key";
+            }
+        } else {
+            return scenarioShortName + " scenario doesn't starts with Given key";
+        }
+        return null;
+    }
+
+ public String checkScenarioStructure(final Scenario scenario, final Lifecycle lifecycle) {
+        String scenarioShortName = ScenarioInfoUtils.getScenarioShortTitle(scenario);
+
+        if(lifecycle.getBeforeSteps().isEmpty()){
+           return checkScenarioStructureWithoutLifecycle(scenarioShortName, ScenarioInfoUtils.getKeySteps(lifecycle, scenario));
+        }
+        else{
+           return checkScenarioStructureWithLifecycle(scenarioShortName, ScenarioInfoUtils.getKeySteps(lifecycle, scenario));
+        }
     }
 
     private boolean isScenarioStartsWithGiven(List<String> stepKeys) {
