@@ -24,9 +24,7 @@ public class StoryChecker {
         Set<String> wrongScenarios = new LinkedHashSet<>();
 
         for (Scenario scenario : story.getScenarios()) {
-            String result = scenarioStructureChecker.checkScenarioStructure(
-                    ScenarioInfoUtils.getScenarioShortTitle(scenario),
-                    ScenarioInfoUtils.getKeySteps(story.getLifecycle(),scenario));
+            String result = scenarioStructureChecker.checkScenarioStructure(scenario, story.getLifecycle());
             if (result != null) {
                 wrongScenarios.add(result);
             }

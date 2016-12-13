@@ -11,19 +11,10 @@ public class ScenarioInfoUtils {
 
     private static final String AND = "And";
 
-    public static List<String> getKeySteps(Lifecycle lifecycle, Scenario scenario) {
+    public static List<String> getKeySteps(List<String> steps) {
 
         List<String> keys = new ArrayList<>();
-
-        if (!lifecycle.getBeforeSteps().isEmpty()){
-            keys.addAll(excludeAndSteps(lifecycle.getBeforeSteps()));
-        }
-
-        keys.addAll(excludeAndSteps(scenario.getSteps()));
-
-        if (!lifecycle.getAfterSteps().isEmpty()){
-            keys.addAll(excludeAndSteps(lifecycle.getAfterSteps()));
-        }
+        keys.addAll(excludeAndSteps(steps));
 
         return keys;
     }

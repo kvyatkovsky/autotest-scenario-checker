@@ -3505,3 +3505,53 @@ Nov-18 14:35:08.813 [main] WARN  Reporter - TC_OR_9654_1 has Then key repeats tw
 Nov-18 14:35:08.813 [main] WARN  Reporter - TC_OR_9661_1 has Then key repeats twice
 Nov-18 14:35:08.813 [main] WARN  Reporter - TC_OR_9672_1 has When key repeats twice
 Nov-18 14:35:08.813 [main] WARN  Reporter - TC_OR_9843_2 has Then key repeats twice
+Dec-05 16:24:07.590 [main] WARN  Reporter - TC_OR_10507_1 scenario doesn't ends with Then key
+Dec-05 16:24:07.590 [main] WARN  Reporter - TC_OR_14115_1 scenario doesn't ends with Then key
+Dec-05 16:24:07.591 [main] WARN  Reporter - TC_OR_18731_1 scenario doesn't starts with Given key
+Dec-05 16:24:07.591 [main] WARN  Reporter - TC_OR_19296_1 scenario doesn't starts with Given key
+Dec-05 16:24:07.591 [main] WARN  Reporter - TC_OR_19301_1 scenario doesn't starts with Given key
+Dec-05 16:24:07.591 [main] WARN  Reporter - TC_OR_19617_1 scenario doesn't ends with Then key
+Dec-05 16:24:07.591 [main] WARN  Reporter - TC_OR_23094_1 scenario doesn't ends with Then key
+Dec-05 16:24:07.591 [main] WARN  Reporter - TC_OR_23094_2 scenario doesn't ends with Then key
+Dec-05 16:24:07.591 [main] WARN  Reporter - TC_OR_23094_3 scenario doesn't ends with Then key
+Dec-05 16:24:07.592 [main] WARN  Reporter - TC_OR_25309_1 has GIVEN key inside
+Dec-05 16:24:07.592 [main] WARN  Reporter - TC_OR_25309_2 has GIVEN key inside
+Dec-05 16:24:07.592 [main] WARN  Reporter - TC_OR_25309_3 has GIVEN key inside
+Dec-05 16:24:07.592 [main] WARN  Reporter - TC_OR_25309_4 has GIVEN key inside
+Dec-05 16:24:07.592 [main] WARN  Reporter - TC_OR_25309_5 has GIVEN key inside
+Dec-05 16:24:07.592 [main] WARN  Reporter - TC_OR_25309_6 has GIVEN key inside
+Dec-05 16:24:07.592 [main] WARN  Reporter - TC_OR_25510_3 has !-- key repeats twice
+Dec-05 16:24:07.593 [main] WARN  Reporter - TC_OR_26182_3 has GIVEN key inside
+Dec-05 16:24:07.593 [main] WARN  Reporter - TC_OR_26182_4 has GIVEN key inside
+Dec-05 16:24:07.593 [main] WARN  Reporter - TC_OR_26182_5 has GIVEN key inside
+Dec-05 16:24:07.593 [main] WARN  Reporter - TC_OR_26182_6 has GIVEN key inside
+Dec-05 16:24:07.593 [main] WARN  Reporter - TC_OR_26182_7 has GIVEN key inside
+Dec-05 16:24:07.593 [main] WARN  Reporter - TC_OR_26182_8 has GIVEN key inside
+Dec-05 16:24:07.593 [main] WARN  Reporter - TC_OR_26182_9 has GIVEN key inside
+Dec-05 16:24:07.593 [main] WARN  Reporter - TC_OR_27124_1 has GIVEN key inside
+Dec-05 16:24:07.594 [main] WARN  Reporter - TC_OR_889_2 scenario doesn't ends with Then key
+Dec-05 16:31:55.028 [main] WARN  Reporter - TC_OR_10507_1 scenario doesn't ends with Then key
+Dec-05 16:31:55.029 [main] WARN  Reporter - TC_OR_14115_1 scenario doesn't ends with Then key
+Dec-05 16:31:55.030 [main] WARN  Reporter - TC_OR_18731_1 scenario doesn't starts with Given key
+Dec-05 16:31:55.030 [main] WARN  Reporter - TC_OR_19296_1 scenario doesn't starts with Given key
+Dec-05 16:31:55.030 [main] WARN  Reporter - TC_OR_19301_1 scenario doesn't starts with Given key
+Dec-05 16:31:55.030 [main] WARN  Reporter - TC_OR_19617_1 scenario doesn't ends with Then key
+Dec-05 16:31:55.030 [main] WARN  Reporter - TC_OR_23094_1 scenario doesn't ends with Then key
+Dec-05 16:31:55.030 [main] WARN  Reporter - TC_OR_23094_2 scenario doesn't ends with Then key
+Dec-05 16:31:55.030 [main] WARN  Reporter - TC_OR_23094_3 scenario doesn't ends with Then key
+Dec-05 16:31:55.030 [main] WARN  Reporter - TC_OR_25309_1 has GIVEN key inside
+Dec-05 16:31:55.031 [main] WARN  Reporter - TC_OR_25309_2 has GIVEN key inside
+Dec-05 16:31:55.031 [main] WARN  Reporter - TC_OR_25309_3 has GIVEN key inside
+Dec-05 16:31:55.031 [main] WARN  Reporter - TC_OR_25309_4 has GIVEN key inside
+Dec-05 16:31:55.031 [main] WARN  Reporter - TC_OR_25309_5 has GIVEN key inside
+Dec-05 16:31:55.031 [main] WARN  Reporter - TC_OR_25309_6 has GIVEN key inside
+Dec-05 16:31:55.031 [main] WARN  Reporter - TC_OR_25510_3 has !-- key repeats twice
+Dec-05 16:31:55.031 [main] WARN  Reporter - TC_OR_26182_3 has GIVEN key inside
+Dec-05 16:31:55.031 [main] WARN  Reporter - TC_OR_26182_4 has GIVEN key inside
+Dec-05 16:31:55.031 [main] WARN  Reporter - TC_OR_26182_5 has GIVEN key inside
+Dec-05 16:31:55.031 [main] WARN  Reporter - TC_OR_26182_6 has GIVEN key inside
+Dec-05 16:31:55.031 [main] WARN  Reporter - TC_OR_26182_7 has GIVEN key inside
+Dec-05 16:31:55.031 [main] WARN  Reporter - TC_OR_26182_8 has GIVEN key inside
+Dec-05 16:31:55.032 [main] WARN  Reporter - TC_OR_26182_9 has GIVEN key inside
+Dec-05 16:31:55.032 [main] WARN  Reporter - TC_OR_27124_1 has GIVEN key inside
+Dec-05 16:31:55.032 [main] WARN  Reporter - TC_OR_889_2 scenario doesn't ends with Then key
